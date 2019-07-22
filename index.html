@@ -1,36 +1,87 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>
-		风声月耳
-	</title>
+	<title>四季变化动画</title>
 	<style type="text/css">
-			body{
-				
-				
-			}
-			div{
-				background-image: url(./images/鼠绘苹果.jpg );
-				
-				background-repeat:no-repeat;
-				
-				
-			}
-		</style>
+	html,body,page{
+		height: 100%;
+		width: 100%;
 
+	}
+	@keyframes myc {
+		0%{opacity: 0;}
+		20%{opacity: 100;}
+		40%{opacity: 0;}
+		100%{opacity: 0;}
+
+	}
+		@keyframes myx {
+		0%{opacity: 0;}
+		20%{opacity: 0;}
+		40%{opacity: 100;}
+		60%{opacity: 0;}
+		100%{opacity: 0;}
+
+	}
+		@keyframes myq {
+		0%{opacity: 0;}
+		40%{opacity: 0;}
+		60%{opacity: 100;}
+		80%{opacity: 0;}
+		100%{opacity: 0;}
+
+	}
+		@keyframes myd {
+		0%{opacity: 0;}
+		60%{opacity: 0;}
+		80%{opacity: 100;}
+		100%{opacity: 0;}
+
+	}
+	#c{
+		background-color:green;
+		animation:myc 5s infinite;
+		font-size: 200px;
+		padding-left:30%;
+		padding-top:30%;
+		position: absolute;
+	}
+	
+	#x{
+		background-color:red;
+		animation:myx 5s infinite;
+		font-size: 200px;
+		padding-left:30%;
+		padding-top:30%;
+		position: absolute;
+	}
+	#q{
+		background-color:yellow;
+		animation:myq 5s infinite;
+		font-size: 200px;
+		padding-left:30%;
+		padding-top:30%;
+		position: absolute;
+	}
+	#d{
+		background-color:black;
+		color: white;
+		animation:myd 5s infinite;
+		font-size: 200px;
+		padding-left:30%;
+		padding-top:30%;
+		position: absolute;
+	}
+	}
+
+</style>
 </head>
 <body>
-	<audio src="./audio/时间煮雨.mp3" controls="controls" autoplay="autoplay">抱歉浏览器不支持此格式</audio>
-	<div>
-		<div></div>
-	<h1>春晓</h1>
-	<p>春眠不觉晓</p>
-	<p>处处闻啼鸟</p>
-	<p>夜来风雨声</p>
-	<p>花落知多少</p>
-	</div>
-	
+	<page id="c">春</page>
+	<page id="x">夏</page>
+	<page id="q">秋</page>
+	<page id="d">冬</page>
+
+
 </body>
 </html>
-
