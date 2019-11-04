@@ -40,28 +40,23 @@
 	
 	function sf(){
 		for( var i=0;i<arr1.length;i++){
-		if(input.value==arr1[i]){
-		   output.value=arr2[i];
-		 }
-		}
-
-	}
-		 function fn(){
-		
-		 	if(sf()){
-		 		return;
-
-		 	}
-		 	else{
-				alert("找不到该物品");
-				return ;
+			if(input.value==arr1[i]){
+				output.value=arr2[i];
+				return true; // 找到物品，返回true
 			}
-		 	
-		
+		}
+		return false; // 没有找到物品，返回false
+	}
+	function fn(){
+		if(sf()){
+			return;
+		}
+		else{
+			alert("找不到该物品");
+			return ;
+		}	
 	}
 
-			
-	
 	button1.addEventListener("click",function(){
 		fn();
 	},false);
@@ -75,13 +70,6 @@
 		}
 	})
 	
-	
-	
-	
-	
-
-
-
 </script>
 </body>
 </html>
